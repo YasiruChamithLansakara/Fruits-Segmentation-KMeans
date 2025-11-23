@@ -75,7 +75,7 @@ This will generate outputs such as:
 
 ### **Original Image**
 
-*(Place your original strawberry image here once uploaded to GitHub)*
+![alt text](image.png)
 
 ### **Segmented Images**
 
