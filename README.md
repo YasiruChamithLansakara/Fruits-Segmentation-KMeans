@@ -1,25 +1,25 @@
-🍓 Strawberry-Segmentation-KMeans
+# 🍓 Strawberry-Segmentation-KMeans
 
-This project applies K-Means image segmentation on a strawberry image using the Lab color space for improved color-based clustering.
-It includes multi-K analysis (K=2,3,4,5), cluster masks, and a complete segmentation pipeline.
+This project applies **K-Means image segmentation** on a strawberry image using the **Lab color space** for improved and more realistic color-based clustering.
+It includes **multi-K analysis (K=2,3,4,5)**, **cluster masks**, and a fully functional segmentation pipeline.
 
-📌 Project Features
+---
 
-✔ Segmentation using K-Means Clustering
+## 📌 Project Features
 
-✔ Works in Lab Color Space (better color separation than RGB)
+✔ Segmentation using **K-Means Clustering**
+✔ Works in **Lab Color Space** (better than RGB for color-based grouping)
+✔ **Multi-K comparison** (2, 3, 4, 5 clusters)
+✔ **Cluster masks** for each K
+✔ Fully documented **Jupyter Notebook version**
+✔ Clean and organized **GitHub folder structure**
+✔ Ready-to-use **PDF Reports**
 
-✔ Multi-K comparison (2, 3, 4, 5 clusters)
+---
 
-✔ Cluster masks for each K
+## 📁 Repository Structure
 
-✔ Fully documented Jupyter Notebook version
-
-✔ Clean GitHub structure
-
-✔ Ready PDF Reports
-
-📁 Repository Structure
+```
 Fruits-Segmentation-KMeans/
 │
 ├── README.md
@@ -30,7 +30,7 @@ Fruits-Segmentation-KMeans/
 │   └── strawberry1.jpg
 │
 ├── notebook_outputs/
-│   └── strawberry1_20251123_152359
+│   └── strawberry1_20251123_152359/
 │       ├── strawberry1_mask_0.png
 │       ├── strawberry1_mask_1.png
 │       ├── strawberry1_mask_2.png
@@ -38,76 +38,89 @@ Fruits-Segmentation-KMeans/
 │
 └── reports/
     └── Image Segmentation - Report.pdf
+```
 
-🚀 How to Run the Project
-1️⃣ Install Dependencies
+---
+
+## 🚀 How to Run the Project
+
+### 1️⃣ Install Dependencies
+
+```bash
 pip install -r requirements.txt
+```
 
-2️⃣ Run Segmentation (Default K=3)
+### 2️⃣ Run Segmentation (Default K=3)
+
+```bash
 python kmeans_segmentation.py --input images/strawberry1.jpg --k 3 --output_dir outputs
+```
 
-3️⃣ Preview Multiple K Values
+### 3️⃣ Preview Multiple K Values
+
+```bash
 python kmeans_segmentation.py --input images/strawberry1.jpg --preview --k_list 2,3,4,5
-
+```
 
 This will generate outputs such as:
 
-strawberry_segmented_K2.png
+* `strawberry_segmented_K2.png`
+* `strawberry_segmented_K3.png`
+* Cluster masks for each K
+* Multi-K comparison preview grid
 
-strawberry_segmented_K3.png
+---
 
-Cluster masks for each K
+## 🎨 Example Output Previews
 
-Comparison preview grid
+### **Original Image**
 
-🎨 Example Output Previews
-Original Image
+*(Place your original strawberry image here once uploaded to GitHub)*
 
-(Place your image here in GitHub after pushing)
+### **Segmented Images**
 
-Segmented Images
+* **K = 2** → Background vs Strawberry
+* **K = 3** → Strawberry, Leaves, Background
+* **K = 4–5** → Seeds, Highlights, Shadows (more fine-grained)
 
-K=2 → Background vs strawberry
-
-K=3 → Strawberry, leaves, background
-
-K=4-5 → Finer details (seeds, highlights, shadows)
-
-Cluster Masks
+### **Cluster Masks**
 
 Each cluster is isolated to show how pixels were grouped.
 
-📘 Reports Included
+---
 
-In reports/:
+## 📘 Reports Included
 
-Image Segmentation - Report.pdf
+Located in the `reports/` folder:
 
-Multi-K comparison
+* **Image Segmentation – Report.pdf**
 
-All masks visualized
+  * Multi-K comparison
+  * All masks visualized
+  * Full explanations of clustering
 
-Full explanations
+---
 
-🛠 Technologies Used
+## 🛠 Technologies Used
 
-Python
+* Python
+* OpenCV
+* NumPy
+* Matplotlib
+* ReportLab
+* Jupyter Notebook
 
-OpenCV
+---
 
-NumPy
+## 🧑‍💻 Author
 
-Matplotlib
+This project was created by **Yasiru Lansakara**,
+for the *Higher National Diploma in Computer Science with Artificial Intelligence*.
 
-ReportLab
+---
 
-Jupyter Notebook
+## 📄 License
 
-🧑‍💻 Author
+Licensed under the **MIT License**.
 
-This project was created by Yasiru Lansakara, for the
-Higher National Diploma in Computer Science with Artificial Intelligence.
-
-📄 License
-
-Licensed under the MIT License.
+---
